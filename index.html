@@ -9,7 +9,7 @@
 </head>
 <body class="bg-[#f3f3f7] flex justify-center items-center min-h-screen text-[#0e0e38]">
     <div class="rounded-xl overflow-hidden absolute shadow-[0px_15px_19px_17px_rgba(58,77,125,0.2)]" id="videoPlayer">
-        <video width="1280" id="video" muted="false">
+        <video width="1280" id="video" poster="https://neluttu.github.io/video-player-2/poster.jpg" muted="false">
             <source src="https://neluttu.github.io/video-player-2/iceage.mp4" type="video/mp4">
         </video>
         <ul id="controls" class="w-full transition-opacity duration-[0.8s] absolute bottom-0 bg-white h-[100px] flex items-center justify-start px-12 gap-9">
@@ -19,7 +19,7 @@
                 <path d="M20.341 4.247l-8 7a1 1 0 0 0 0 1.506l8 7c.647 .565 1.659 .106 1.659 -.753v-14c0 -.86 -1.012 -1.318 -1.659 -.753z" stroke-width="0" fill="#3e4d7c" />
                 <path d="M9.341 4.247l-8 7a1 1 0 0 0 0 1.506l8 7c.647 .565 1.659 .106 1.659 -.753v-14c0 -.86 -1.012 -1.318 -1.659 -.753z" stroke-width="0" fill="#3e4d7c" />
                 </svg>
-                <svg id="play" xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-player-play-filled" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3e4d7c" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                <svg id="play" xmlns="http://www.w3.org/2000/svg" class="cursor-pointer" width="36" height="36" viewBox="0 0 24 24" stroke-width="1.5" stroke="#3e4d7c" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                     <path d="M6 4v16a1 1 0 0 0 1.524 .852l13 -8a1 1 0 0 0 0 -1.704l-13 -8a1 1 0 0 0 -1.524 .852z" stroke-width="0" fill="#3e4d7c" />
                 </svg>
@@ -86,7 +86,7 @@
             const stopButton = document.getElementById('stop');
             const videoPlayer = document.getElementById('videoPlayer');
             const controls = document.getElementById('controls');
-            video.currentTime = 24;
+            //video.currentTime = 24;
 
             let timeoutId;
 
