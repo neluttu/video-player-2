@@ -10,7 +10,7 @@
 <body class="bg-[#f3f3f7] flex justify-center items-center min-h-screen text-[#0e0e38]">
     <div class="rounded-xl overflow-hidden absolute shadow-[0px_15px_19px_17px_rgba(58,77,125,0.2)]" id="videoPlayer">
         <video width="1280" id="video" muted="false">
-            <source src="iceage.mp4" type="video/mp4">
+            <source src="https://neluttu.github.io/video-player-2/iceage.mp4" type="video/mp4">
         </video>
         <ul id="controls" class="w-full transition-opacity duration-[0.8s] absolute bottom-0 bg-white h-[100px] flex items-center justify-start px-12 gap-9">
            <li class="flex items-center justify-start gap-7">
@@ -104,9 +104,9 @@
                 setTimeout(() => {
                     controls.style.display = 'none';
                     controls.classList.remove('fade-out');
-                }, 300); // Adjust this value to match your desired fade-out transition duration
-                }, 5000); // Adjust this value to set the delay before the fade-out effect triggers
-            }, 3000); // Adjust this value to set the delay before the background color starts fading
+                }, 300);
+                }, 5000);
+            }, 3000);
             });
 
             playButton.addEventListener('click', () => {
